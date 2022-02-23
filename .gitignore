@@ -1,0 +1,4 @@
+survey/migrations/
+survey/__pycache__/
+wegotrip/__pycache__/
+venv

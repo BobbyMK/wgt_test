@@ -1,0 +1,14 @@
+{% extends 'admin/change_form.html' %}
+
+{% block submit_buttons_bottom %}
+    {{ block.super }}
+    {% comment %}
+    Отображаем кнопку только для существующих instance, при создании - не отображаем
+    {% endcomment %}
+    {% if original %}
+        <div class="submit-row">
+            <input type='submit' name="_publish" value='Опубликовать' style="float:right; background-color:rgb(15, 141, 4)">
+        </div>
+    {% endif %}
+{% endblock %}
+
